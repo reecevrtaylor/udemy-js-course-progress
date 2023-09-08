@@ -59,7 +59,6 @@ checkWinner(scoreDolphins, scoreKoalas);
 
 */
 
-
 // More efficient way:
 
 // Function to calculate the average of three numbers
@@ -69,33 +68,33 @@ const calcAverage = (a, b, c) => (a + b + c) / 3;
 // Function to determine the winner between two teams based on their average scores
 // Takes the average scores of Dolphins and Koalas as arguments.
 const checkWinner = (avgDolphins, avgKoalas) => {
-    // Check if Dolphins' average score is at least double that of Koalas
-    if (avgDolphins >= 2 * avgKoalas) {
-        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-    } 
-    // Check if Koalas' average score is at least double that of Dolphins
-    else if (avgKoalas >= 2 * avgDolphins) {
-        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
-    } 
-    // If neither team has double the score of the other, no team wins
-    else {
-        console.log("No team wins...");
-    }
+  // Check if Dolphins' average score is at least double that of Koalas
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+  }
+  // Check if Koalas' average score is at least double that of Dolphins
+  else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+  }
+  // If neither team has double the score of the other, no team wins
+  else {
+    console.log("No team wins...");
+  }
 };
 
 // Array of test data sets. Each set contains scores for Dolphins and Koalas.
 // Stored as objects for better readability and extensibility.
 const testData = [
-    { dolphins: [44, 23, 71], koalas: [65, 54, 49] },
-    { dolphins: [85, 54, 41], koalas: [23, 34, 27] }
+  { dolphins: [44, 23, 71], koalas: [65, 54, 49] },
+  { dolphins: [85, 54, 41], koalas: [23, 34, 27] },
 ];
 
 // Loop through each test data set
 for (const testData of testData) {
-    // Calculate the average score for Dolphins using the spread operator to pass individual scores
-    const avgDolphins = calcAverage(...testData.dolphins);
-    // Calculate the average score for Koalas using the spread operator to pass individual scores
-    const avgKoalas = calcAverage(...testData.koalas);
-    // Determine the winner based on the average scores
-    checkWinner(avgDolphins, avgKoalas);
+  // Calculate the average score for Dolphins using the spread operator to pass individual scores
+  const avgDolphins = calcAverage(...testData.dolphins);
+  // Calculate the average score for Koalas using the spread operator to pass individual scores
+  const avgKoalas = calcAverage(...testData.koalas);
+  // Determine the winner based on the average scores
+  checkWinner(avgDolphins, avgKoalas);
 }

@@ -16,15 +16,15 @@ TEST DATA: 125, 555, and 44.
 */
 
 const calcTip = (billValue) => {
-    if (billValue > 50 && billValue < 300) {
-        return (billValue/100) * 15;
-    } else {
-        return (billValue/100) * 20;
-    }
+  if (billValue > 50 && billValue < 300) {
+    return (billValue / 100) * 15;
+  } else {
+    return (billValue / 100) * 20;
+  }
 };
 
 const bills = [125, 555, 44];
 
-const tips = bills.map(bill => calcTip(bill));
+const tips = bills.map((bill) => calcTip(bill));
 
 const totals = bills.map((bill, index) => bill + tips[index]);
