@@ -18,3 +18,9 @@ While the course itself provides an excellent foundation, I believe in the value
 
 - Improved versions of the projects and exercises in the course, where I've used my existing knowledge to optimize the code.
 - Extra comments and documentation to clarify complex JavaScript functionalities and features.
+
+## Scripts
+
+This repository includes a script named copy-starter-files.sh, located in the scripts directory. The script automates the process of copying the initial 'starter files' from the cloned complete-javascript-course repository into their corresponding folders within this repository.
+
+By running this script, I can populate the folders here with the original starter files from the course, while keeping my own work separate. This approach lets me follow along with the course, utilizing the initial files provided, without modifying / using the cloned course repository.
