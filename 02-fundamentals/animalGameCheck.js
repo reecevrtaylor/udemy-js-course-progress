@@ -59,7 +59,7 @@ checkWinner(scoreDolphins, scoreKoalas);
 
 */
 
-// More efficient way:
+// More efficient:
 
 // Function to calculate the average of three numbers
 // Takes three arguments (a, b, c) and returns their average.

@@ -1,11 +1,11 @@
 'use strict';
 
-// Function to update text content
+// function to update text content
 const setTextContent = (selector, content) => {
   document.querySelector(selector).textContent = content;
 };
 
-// Capture initial states
+// capture initial states
 const initialBackgroundColor = '#222';
 const initialNumberWidth = '15rem';
 const initialMessage = 'Start guessing...';
