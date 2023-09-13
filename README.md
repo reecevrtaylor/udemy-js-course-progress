@@ -12,6 +12,10 @@ I'm creating this repository for several reasons:
 2. **Reference:** This serves as a quick reference for the future when I need to revisit certain topics.
 3. **Showcase:** It allows me to showcase my skills and the depth of my understanding of JavaScript.
 
+## My Approach
+
+My learning approach for this course is hands-on and focused on self-assessment. For challenges and projects, I first pause the video to try writing my own solutions. After that, I resume the course to compare my work with Jonas' techniques. This strategy allows me test my current understanding, see alternative methods, and identify areas for improvement. It's a balanced way to both apply what I've learned and benefit from expert insights.
+
 ## Beyond the Course
 
 While the course itself provides an excellent foundation, I believe in the value of practice and exploration to reinforce learning. Therefore, you'll also find:
