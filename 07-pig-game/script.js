@@ -60,6 +60,8 @@ btnHold.addEventListener('click', function () {
       scores[activePlayer];
     if (scores[activePlayer] >= 10) {
       playing = false;
+      btnHold.classList.add('disabled');
+      btnRoll.classList.add('disabled');
       diceEl.classList.add('hidden');
       document
         .querySelector(`.player--${activePlayer}`)
