@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repo is dedicated to my progress in the Udemy course, "The Complete JavaScript Course" by Jonas Schmedtmann. The course is a comprehensive guide to JavaScript, covering everything from fundamentals to advanced topics like async programming, ES6+ features, and best practices. I am using this as a guide to build up my JavaScript skills and strengthen my existing knowledge.
+This repo is dedicated to my progress in the Udemy course, ["The Complete JavaScript Course"](https://www.udemy.com/course/the-complete-javascript-course/) by Jonas Schmedtmann. The course is a comprehensive guide to JavaScript, covering everything from fundamentals to advanced topics like async programming, ES6+ features, and best practices. I am using this as a guide to build up my JavaScript skills and strengthen my existing knowledge.
 
 ## Why This Repo?
 
