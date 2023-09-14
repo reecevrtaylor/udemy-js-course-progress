@@ -14,7 +14,7 @@ I'm creating this repository for several reasons:
 
 ## My Approach
 
-My learning approach for this course is hands-on and focused on self-assessment. For challenges and projects, I first pause the video to try writing my own solutions. After that, I resume the course to compare my work with Jonas' techniques. This strategy allows me test my current understanding, see alternative methods, and identify areas for improvement. It's a balanced way to both apply what I've learned and benefit from expert insights.
+My learning approach for this course is hands-on and focused on self-assessment. For challenges and projects, I first pause the video to try writing my own solutions. After that, I resume the course to compare my work with Jonas' techniques. This strategy allows me to test my current understanding, see alternative methods, and identify areas for improvement. Additionally, I will be incorporating custom code into projects when I see fit or think it could enhance the project. This not only deepens my understanding but also allows me to explore creative solutions. It's a balanced way to both apply what I've learned and benefit from expert insights.
 
 ## Beyond the Course
 
