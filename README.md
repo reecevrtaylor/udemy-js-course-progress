@@ -23,29 +23,29 @@ Certainly! Here's the section you can include in your README to describe your co
 In this repository, I use specific tags in my git commit messages to quickly convey the type of changes made. Here are the tags and what they represent:
 
 - **update:** Used when updating the progress of a particular topic or section.
-  _Example: `update: 02 - complete arrays`_
+  - _Example: `update: 02 - complete arrays`_
 
 - **complete:** Indicates the completion of a section or challenge within the course.
-  _Example: `complete: 05 - section complete`_
+  - _Example: `complete: 05 - section complete`_
 
 - **refactor**: Reserved for smaller, more focused changes aimed at restructuring the code without altering its functionality. This includes changes for code readability or minor performance optimization.
-  _Example: `refactor: 07 - simplified conditional logic in 'x' function`_
+  - _Example: `refactor: 07 - simplified conditional logic in 'x' function`_
 
 - **improve**: Used when making substantial changes to existing files. This can involve optimizing the code, implementing better solutions, or even re-writing sections for better performance.
-  _Example: `improve: 08 - overhauled logic and variables in script`_
+  - _Example: `improve: 08 - overhauled logic and variables in script`_
   - **Note**: It isn't always easy to distinguish between refactor and improve. In general, I use refactor for smaller, more focused changes and improve for larger, more substantial changes.
 
 - **custom:** Denotes commits where I have added custom code or features that I thought were valuable additions to the project.
-  _Example: `custom: 09 - added additional data structure`_
+  - _Example: `custom: 09 - added additional data structure`_
 
 - **style:** Commits focused solely on stylistic changes like formatting, indentation, or aesthetic updates.
-  _Example: `style: 10 - added disabled style for buttons`_
+  - _Example: `style: 10 - added disabled style for buttons`_
 
 - **fix:** Used when a bug is identified and corrected.
-  _Example: `fix: 11 - resolved issue with incorrect function call`_
+  - _Example: `fix: 11 - resolved issue with incorrect function call`_
 
 - **docs:** Indicates commits that are primarily focused on updating documentation, comments, or the README.
-  _Example: `docs: updated readme`_
+  - _Example: `docs: updated readme`_
 
 ## Beyond the Course
 
