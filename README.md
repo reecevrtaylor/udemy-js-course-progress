@@ -16,8 +16,6 @@ I'm creating this repository for several reasons:
 
 My learning approach for this course is hands-on and focused on self-assessment. For challenges and projects, I first pause the video to try writing my own solutions. After that, I resume the course to compare my work with Jonas' techniques. This strategy allows me to test my current understanding, see alternative methods, and identify areas for improvement. Additionally, I will be incorporating custom code into projects when I see fit or think it could enhance the project. This not only deepens my understanding but also allows me to explore creative solutions. It's a balanced way to both apply what I've learned and benefit from expert insights.
 
-Certainly! Here's the section you can include in your README to describe your commit message tags.
-
 ## Commit Message Tags
 
 In this repository, I use specific tags in my git commit messages to quickly convey the type of changes made. Here are the tags and what they represent:
