@@ -1,5 +1,6 @@
 'use strict';
 
+// My improved version
 const playersEl = [
   document.querySelector('.player--0'),
   document.querySelector('.player--1'),
