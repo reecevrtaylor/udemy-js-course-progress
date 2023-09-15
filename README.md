@@ -18,32 +18,23 @@ My learning approach for this course is hands-on and focused on self-assessment.
 
 ## Commit Message Tags
 
-In this repository, I use specific tags in my git commit messages to quickly convey the type of changes made. Here are the tags and what they represent:
+In this repository, I use specific tags in my git commit messages to convey the nature of the changes. Below is a table outlining the tags and their respective use-cases:
 
-- **update:** Used when updating the progress of a particular topic or section.
-  - _Example: `update: 02 - complete arrays`_
+| Tag       | Description                                                                                          | Example                                     |
+|-----------|------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| **update**    | Used when updating the progress of a particular topic or section.                                       | `update: 02 - complete arrays`              |
+| **complete**  | Indicates the completion of a section or challenge within the course.                                   | `complete: 05 - section complete`           |
+| **refactor**  | Reserved for smaller changes that restructure code without altering its functionality.                   | `refactor: 07 - simplified conditional logic`|
+| **improve**   | Used for substantial changes to existing files, including optimizations and re-writes for performance.  | `improve: 08 - overhauled logic`             |
+| **custom**    | Denotes custom code or features added to the project.                                                  | `custom: 09 - added additional data structure`|
+| **style**     | Commits focused on stylistic changes like formatting or aesthetic updates.                             | `style: 10 - added disabled style for buttons`|
+| **fix**       | For commits that identify and correct a bug.                                                           | `fix: 11 - resolved issue with function call`|
+| **docs**      | Commits focused on updating documentation, comments, or the README.                                     | `docs: updated readme`|
 
-- **complete:** Indicates the completion of a section or challenge within the course.
-  - _Example: `complete: 05 - section complete`_
-
-- **refactor**: Reserved for smaller, more focused changes aimed at restructuring the code without altering its functionality. This includes changes for code readability or minor performance optimization.
-  - _Example: `refactor: 07 - simplified conditional logic in 'x' function`_
-
-- **improve**: Used when making substantial changes to existing files. This can involve optimizing the code, implementing better solutions, or even re-writing sections for better performance.
-  - _Example: `improve: 08 - overhauled logic and variables in script`_
-  - **Note**: It isn't always easy to distinguish between refactor and improve. In general, I use refactor for smaller, more focused changes and improve for larger, more substantial changes.
-
-- **custom:** Denotes commits where I have added custom code or features that I thought were valuable additions to the project.
-  - _Example: `custom: 09 - added additional data structure`_
-
-- **style:** Commits focused solely on stylistic changes like formatting, indentation, or aesthetic updates.
-  - _Example: `style: 10 - added disabled style for buttons`_
-
-- **fix:** Used when a bug is identified and corrected.
-  - _Example: `fix: 11 - resolved issue with incorrect function call`_
-
-- **docs:** Indicates commits that are primarily focused on updating documentation, comments, or the README.
-  - _Example: `docs: updated readme`_
+### Special Note on **refactor** and **improve**
+It's not always straightforward to distinguish between **refactor** and **improve**. In general:
+- **refactor** is used for smaller, more focused changes
+- **improve** is used for larger, more substantial changes
 
 ## Beyond the Course
 
