@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index
+# Reece Taylor
+
 types=(
     "1" "feat"          "Features - A new feature"
     "2" "fix"           "Bug Fixes - A bug fix"
@@ -15,47 +16,96 @@ types=(
     "11" "revert"       "Reverts - Reverts a previous commit"
 )
 
+# Define color codes
+RED="\033[1;31m"
+GREEN="\033[1;32m"
+YELLOW="\033[1;33m"
+BLUE="\033[1;34m"
+PURPLE="\033[1;35m"
+CYAN="\033[1;36m"
+RESET="\033[0m"
+
 function show_types {
-    echo "Available commit types:"
+    echo -e "\n${GREEN}Commit Types:${RESET}"
+    echo -e "${CYAN}+----+----------+--------------------------------------------------------------------------------+"
+    echo -e "| #  |  Type   | Description                                                                    |"
+    echo -e "+----+----------+--------------------------------------------------------------------------------+"
     for (( i=0; i<${#types[@]}; i+=3 ))
     do
-        echo "${types[i]}: ${types[i+1]} - ${types[i+2]}"
+        printf "| %-2s | ${BLUE}%-8s${RESET} | ${PURPLE}%-78s${RESET} |\n" "${types[i]}" "${types[i+1]}" "${types[i+2]}"
+        echo -e "${CYAN}+----+----------+--------------------------------------------------------------------------------+"
     done
+    echo
 }
 
-# Display the commit types and ask for user's choice
-show_types
-read -p "Choose a commit type (number or name): " choice
+clear
+while true; do
+    show_types
+    echo -ne "${BLUE}Select type (num/name)${RESET}, or ${RED}'q'${RESET} to quit: "
+    read choice
 
-# Determine the commit type
-commit_type=""
-if [[ "$choice" =~ ^[0-9]+$ ]]; then
-    # The choice is a number. Translate it to a commit type.
-    index=$(($choice * 3 - 3))
-    if [ "$index" -ge 0 ] && [ "$index" -lt "${#types[@]}" ]; then
-        commit_type="${types[index+1]}"
-    else
-        echo "Invalid type number."
-        exit 1
+    if [ "$choice" == "q" ]; then
+        exit 0
     fi
-else
-    # Check if the choice is a valid commit type
-    for (( i=1; i<${#types[@]}; i+=3 ))
-    do
-        if [ "${types[i]}" == "$choice" ]; then
-            commit_type="$choice"
-            break
+
+    commit_type=""
+    if [[ "$choice" =~ ^[0-9]+$ ]]; then
+        index=$(($choice * 3 - 3))
+        if [ "$index" -ge 0 ] && [ "$index" -lt "${#types[@]}" ]; then
+            commit_type="${types[index+1]}"
+        else
+            echo -e "${RED}Invalid choice.${RESET}"
+            sleep 1
+            clear
+            continue
         fi
-    done
-fi
+    else
+        for (( i=1; i<${#types[@]}; i+=3 ))
+        do
+            if [ "${types[i]}" == "$choice" ]; then
+                commit_type="$choice"
+                break
+            fi
+        done
+    fi
 
-if [ -z "$commit_type" ]; then
-    echo "Invalid commit type."
-    exit 1
-fi
+    if [ -z "$commit_type" ]; then
+        echo -e "${RED}Invalid type.${RESET}"
+        sleep 1
+        clear
+        continue
+    fi
 
-# Prompt for the commit message
-read -p "Enter your commit message: " commit_msg
+    echo -e "\n${YELLOW}Enter your commit message${RESET} (or ${BLUE}'b'${RESET} to go back)"
+    echo -ne "\n${BLUE}($commit_type:)${RESET}: "
+    read commit_msg
+    if [ "$commit_msg" == "b" ]; then
+        clear
+        continue
+    fi
 
-# Generate the git commit command
-git commit -m "$commit_type: $commit_msg"
+    echo
+    echo -e "${GREEN}Commit Preview:${RESET}"
+    echo -e "git commit -m \"${BLUE}$commit_type:${RESET} ${YELLOW}$commit_msg\"${RESET}"
+    echo
+
+    echo -ne "${GREEN}'ENTER'${RESET} to confirm, ${BLUE}'b'${RESET} to reselect, ${YELLOW}'m'${RESET} to edit message, ${RED}'q'${RESET} to quit: "
+    read confirm
+    if [ -z "$confirm" ]; then
+        git commit -m "$commit_type: $commit_msg"
+        exit 0
+    elif [ "$confirm" == "m" ]; then
+        clear
+        continue
+    elif [ "$confirm" == "b" ]; then
+        clear
+        continue
+    elif [ "$confirm" == "q" ]; then
+        exit 0
+    else
+        echo -e "${RED}Invalid option.${RESET}"
+        sleep 1
+        clear
+        continue
+    fi
+done
