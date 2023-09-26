@@ -45,6 +45,20 @@ While the course itself provides an excellent foundation, I believe in the value
 
 ## [Scripts](scripts)
 
-This repository includes a script named copy-starter-files.sh, located in the scripts directory. The script automates the process of copying the initial 'starter files' from the cloned complete-javascript-course repository into their corresponding folders within this repository.
+### [copy_starter_files.sh](scripts/copy_starter_files.sh)
+This repository includes a script named `copy-starter-files.sh`, located in the `scripts` directory. The script automates the process of copying the initial 'starter files' from the cloned `complete-javascript-course` repository into their corresponding folders within this repository.
 
-By running this script, I can populate the folders here with the original starter files from the course, while keeping my own work separate. This approach lets me follow along with the course, utilizing the initial files provided, without modifying / using the cloned course repository.
+By running this script, I can populate the folders here with the original starter files from the course, while keeping my own work separate. This approach lets me follow along with the course, utilizing the initial files provided, without modifying or using the cloned course repository.
+
+### [gcommitp.sh](scripts/gcommitp.sh)
+`gcommitp` is a convenient script to automate and standardize git commit messages using the conventional commit format. The script provides interactive prompts to guide users in selecting the appropriate commit type, ensuring consistent commit message formatting.
+
+#### Usage
+Simply run `./scripts/gcommitp.sh` in your terminal. Follow the prompts to select a commit type and enter your message. The script will then automatically create a git commit with the chosen type and message.
+
+#### Supported Commit Types
+- `feat`: Features - A new feature.
+- `fix`: Bug Fixes - A bug fix.
+- `docs`: Documentation - Documentation only changes.
+... [and so on for other commit types]
+
