@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Reece Taylor
+# Reece Taylor 2023
 
 types=(
     "1" "feat"          "Features - A new feature"
